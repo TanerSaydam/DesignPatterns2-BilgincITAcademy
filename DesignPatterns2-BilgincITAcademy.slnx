@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/ClassicPatterns/" />
+  <Folder Name="/ClassicPatterns/01CreationalPatterns/">
+    <Project Path="ClassicPatterns/01CreationalPatterns/01SingletonPattern/01SingletonPattern.csproj" Id="8f88233d-5b4f-465c-b31f-a061902c2bbd" />
+  </Folder>
+  <Folder Name="/NET10Features/">
+    <Project Path="NET10Features/NET10Features.WebAPI/NET10Features.WebAPI.csproj" Id="f585ef34-b4a5-4ab5-9c7e-c64d03b0536b" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+</Solution>
