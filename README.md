@@ -1,4 +1,5 @@
-﻿﻿# Design Patterns
+﻿# Design Patterns
+
 ## Nedir?
 **Design Patterns** yazılım geliştirmede sıkça karşılaştığımız problemler için **tekrar kullanılabilir**, **test edilmiş** ve **genel çözümler** sunan **tasarım kalıbıdır**
 
