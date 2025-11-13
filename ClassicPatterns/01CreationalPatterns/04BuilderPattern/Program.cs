@@ -63,6 +63,8 @@ fluentEmail
     .Body("<h1>Hello world!</h1>", true)
     .Send();
 
+
+
 Console.ReadLine();
 
 #region Gerçek Hayat Örneği
