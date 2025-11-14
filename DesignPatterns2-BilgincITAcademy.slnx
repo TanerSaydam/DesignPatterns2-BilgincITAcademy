@@ -14,6 +14,10 @@
     <Project Path="ClassicPatterns/02StructuralPatterns/04DecoratorPattern/04DecoratorPattern.csproj" Id="af550849-e2f2-47f1-9e20-a5067102efd6" />
     <Project Path="ClassicPatterns/02StructuralPatterns/05FacadePattern/05FacadePattern.csproj" Id="3d2f871f-88a0-4427-829f-20b3c3383bb7" />
     <Project Path="ClassicPatterns/02StructuralPatterns/06FlyweightPattern/06FlyweightPattern.csproj" Id="ad2ba7c0-f7ea-4586-8bfc-06cf4c4f0e09" />
+    <Project Path="ClassicPatterns/02StructuralPatterns/07ProxyPattern/07ProxyPattern.csproj" Id="1730d1a0-415a-4bfa-88c1-1ac57d0b12da" />
+  </Folder>
+  <Folder Name="/ModernPatterns/">
+    <Project Path="ModernPatterns/01Middleware/01Middleware.csproj" Id="13740981-a6d9-46cd-af98-929ff42b6919" />
   </Folder>
   <Folder Name="/NET10Features/">
     <Project Path="NET10Features/NET10Features.WebAPI/NET10Features.WebAPI.csproj" Id="f585ef34-b4a5-4ab5-9c7e-c64d03b0536b" />
