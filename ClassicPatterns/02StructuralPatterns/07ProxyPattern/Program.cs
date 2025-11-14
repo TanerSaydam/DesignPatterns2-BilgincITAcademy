@@ -3,7 +3,6 @@
 ProductService productService = new(new ProductRepository());
 productService.Create(new ProductDto("Bilgisayar", 5000));
 
-
 Console.ReadLine();
 
 record ProductDto(

@@ -1,0 +1,9 @@
+POST https://localhost:7261/api/products?name=a
+Content-Type: application/json
+
+{
+  "name":"Bilgisayar",
+  "price":5000
+}
+
+###

@@ -3,15 +3,16 @@ using Microsoft.AspNetCore.Mvc.Filters;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddOpenApi();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
 app.MapOpenApi();
 
-app.Use((context, next) =>
+app.Use(async (context, next) =>
 {
     //context kontrol
-    return next(context);
+    await next(context);
 });
 
 app.UseHttpsRedirection();
@@ -22,7 +23,14 @@ app.UseAuthentication();
 
 app.UseAuthorization();
 
+app.Use(async (context, next) =>
+{
+    //context kontrol
+    await next(context);
+});
+
 app.MapControllers();
+
 
 app.Run();
 

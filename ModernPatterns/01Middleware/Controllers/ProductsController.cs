@@ -13,4 +13,16 @@ public sealed class ProductsController : ControllerBase
         //buesiness rules
         return Ok();
     }
+
+    [HttpPost]
+    [MyValidation]
+    public IActionResult Create(ProductDto request)
+    {
+        //buesiness rules
+        return Ok();
+    }
 }
+
+public record ProductDto(
+    string Name,
+    decimal Price);
