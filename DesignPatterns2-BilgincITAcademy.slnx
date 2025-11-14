@@ -9,6 +9,8 @@
   </Folder>
   <Folder Name="/ClassicPatterns/02StructuralPatterns/">
     <Project Path="ClassicPatterns/02StructuralPatterns/01AdapterPattern/01AdapterPattern.csproj" Id="4d2c2044-0cd8-4a21-abba-178386341eb6" />
+    <Project Path="ClassicPatterns/02StructuralPatterns/02BridgePattern/02BridgePattern.csproj" Id="1364b78b-22f8-4153-b4e5-e8a55e0236fa" />
+    <Project Path="ClassicPatterns/03CompositePattern/03CompositePattern.csproj" Id="cc75c695-e61f-4c28-89f7-70552e89362c" />
   </Folder>
   <Folder Name="/NET10Features/">
     <Project Path="NET10Features/NET10Features.WebAPI/NET10Features.WebAPI.csproj" Id="f585ef34-b4a5-4ab5-9c7e-c64d03b0536b" />
