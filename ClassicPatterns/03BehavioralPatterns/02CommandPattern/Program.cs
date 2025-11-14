@@ -5,16 +5,17 @@ createCommand.Handle();
 
 Console.ReadLine();
 
-interface IProductService
-{
-    void Create();
-    void Update();
-    void Delete();
-}
+//Bunun yerine metotlar ayrı classlara dönüştürülmeli
+//interface IProductService
+//{
+//    void Create();
+//    void Update();
+//    void Delete();
+//}
 
-class ProductService : IProductService
-{
-    public void Create() { }
-    public void Update() { }
-    public void Delete() { }
-}
+//class ProductService : IProductService
+//{
+//    public void Create() { }
+//    public void Update() { }
+//    public void Delete() { }
+//}
