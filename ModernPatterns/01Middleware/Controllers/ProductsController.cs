@@ -4,7 +4,8 @@ namespace _01Middleware.Controllers;
 
 [ApiController]
 [Route("api/products")]
-public sealed class ProductsController : ControllerBase
+public sealed class ProductsController(
+    IProductRepository productRepository) : ControllerBase
 {
     [HttpGet]
     [MyValidation]

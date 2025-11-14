@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddControllers();
 
+builder.Services.AddScoped<IProductRepository, ProductRepository1>();
+
 var app = builder.Build();
 
 app.MapOpenApi();
@@ -46,3 +48,9 @@ class MyValidation : Attribute, IActionFilter
         Console.WriteLine("Metodun baþýnda");
     }
 }
+
+
+public interface IProductRepository;
+
+public class ProductRepository1 : IProductRepository;
+public class ProductRepository2 : IProductRepository;

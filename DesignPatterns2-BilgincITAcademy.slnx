@@ -19,6 +19,7 @@
   <Folder Name="/ClassicPatterns/03BehavioralPatterns/">
     <Project Path="ClassicPatterns/03BehavioralPatterns/01ChainOfResponsbilityPattern/01ChainOfResponsbilityPattern.csproj" Id="180f38b7-9256-43f3-bb4f-3d757433f455" />
     <Project Path="ClassicPatterns/03BehavioralPatterns/02CommandPattern/02CommandPattern.csproj" Id="273de959-235e-4ad2-96f5-34720be3e333" />
+    <Project Path="ClassicPatterns/03BehavioralPatterns/03MediatorPattern/03MediatorPattern.csproj" Id="fb6a9455-e2f6-481b-9f13-5382b8e7405e" />
   </Folder>
   <Folder Name="/ModernPatterns/">
     <Project Path="ModernPatterns/01Middleware/01Middleware.csproj" Id="13740981-a6d9-46cd-af98-929ff42b6919" />
