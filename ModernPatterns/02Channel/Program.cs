@@ -3,6 +3,7 @@ using _02Channel;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<EmailQueue>();
+builder.Services.AddScoped<TestScoped>();
 builder.Services.AddHostedService<EmailBackgroundService>();
 
 var app = builder.Build();
@@ -18,3 +19,5 @@ app.Run();
 public record EmailDto(
     string To,
     string Subject);
+
+public class TestScoped { }
