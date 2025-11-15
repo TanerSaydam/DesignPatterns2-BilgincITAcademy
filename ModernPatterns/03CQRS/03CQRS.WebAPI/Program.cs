@@ -1,5 +1,5 @@
+using _03CQRS.Application.Products;
 using _03CQRS.Application.Queues;
-using _03CQRS.Application.Services;
 using _03CQRS.Domain.Products;
 using _03CQRS.Infrastructure.Context;
 using _03CQRS.Infrastructure.Queues;
@@ -15,12 +15,12 @@ builder.Services.AddDbContext<ReadDbContext>(opt => opt.UseInMemoryDatabase("MyD
 
 builder.Services.AddHostedService<DbBackgroundServices>();
 builder.Services.AddSingleton<IDbQueue, DbQueue>();
-builder.Services.AddTransient<ProductService>();
+builder.Services.AddTransient<ProductCreate>();
+builder.Services.AddTransient<ProductGetAll>();
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 
 builder.Services.AddCarter();
 builder.Services.AddCors();
-
 
 // AddResponseCompression
 

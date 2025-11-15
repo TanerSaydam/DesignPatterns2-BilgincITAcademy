@@ -1,4 +1,4 @@
-﻿using _03CQRS.Application.Services;
+﻿using _03CQRS.Application.Products;
 using _03CQRS.Domain.Products.Dtos;
 using Carter;
 
@@ -12,18 +12,18 @@ public sealed class ProductModule : ICarterModule
 
         app.MapPost(string.Empty, async (
             CreateProductDto request,
-            ProductService productService,
+            ProductCreate productCreate,
             CancellationToken cancellationToken) =>
         {
-            await productService.Ceate(request, cancellationToken);
+            await productCreate.Handle(request, cancellationToken);
             return Results.NoContent();
         });
 
         app.MapGet(string.Empty, async (
-            ProductService productService,
+            ProductGetAll productGetAll,
             CancellationToken cancellationToken) =>
         {
-            var products = await productService.GetAll(cancellationToken);
+            var products = await productGetAll.Handle(cancellationToken);
             return products;
         });
     }
