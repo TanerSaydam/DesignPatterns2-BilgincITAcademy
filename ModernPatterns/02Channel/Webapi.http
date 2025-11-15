@@ -1,0 +1,7 @@
+POST http://localhost:5283/send-email
+Content-Type: application/json
+
+{
+  "to":"tanersaydam@gmail.com",
+  "subject":"Hello!"
+}
