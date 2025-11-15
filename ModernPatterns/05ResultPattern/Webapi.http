@@ -1,0 +1,13 @@
+Post http://localhost:5282/create
+Content-Type:application/json
+
+{
+  "name":"Bilgisayar",
+  "price":5000
+}
+
+###
+GET http://localhost:5282/get/1
+
+### 
+GET http://localhost:5282/exception
