@@ -82,3 +82,6 @@ Bu kalıplar, esnek ve genişletilebilir davranış modelleri oluşturmayı sağ
 | **Command Pattern** | CQRS + Mediator | Komutların bağımsız olarak işlenmesi CQRS yapısı ve handler’lar aracılığıyla yapılıyor. |
 | **Facade** | API Gateway, Application Service | Alt sistemleri sadeleştiren yapı artık gateway veya application-level servis olarak uygulanıyor. |
 | **Flyweight** | Cache, Object Pooling, Shared Immutable State | Nesne paylaşımı modern cache mekanizmalarıyla sağlanıyor. |
+
+## Consul
+```docker run -d --name consul -p 8500:8500 hashicorp/consul:latest```

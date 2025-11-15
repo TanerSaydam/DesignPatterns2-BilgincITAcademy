@@ -34,6 +34,10 @@
     <Project Path="ModernPatterns/03CQRS/03CQRS.Infrastructure/03CQRS.Infrastructure.csproj" Id="4422139c-c080-48e9-ae4c-46a0fb44c37a" />
     <Project Path="ModernPatterns/03CQRS/03CQRS.WebAPI/03CQRS.WebAPI.csproj" Id="f25a67da-ad22-4d1f-a764-9552a1c5a77d" />
   </Folder>
+  <Folder Name="/ModernPatterns/06ServiceDiscovertPattern/">
+    <Project Path="ModernPatterns/06ServiceDiscovertPattern/06ServiceDiscovertPattern.BasketWebAPI/06ServiceDiscovertPattern.BasketWebAPI.csproj" Id="38e7a0f8-ee72-4617-96a7-8469a13be200" />
+    <Project Path="ModernPatterns/06ServiceDiscovertPattern/06ServiceDiscovertPattern.ProductWebAPI/06ServiceDiscovertPattern.ProductWebAPI.csproj" Id="0fe0af62-cb32-4372-9068-21c214d2104e" />
+  </Folder>
   <Folder Name="/NET10Features/">
     <Project Path="NET10Features/NET10Features.WebAPI/NET10Features.WebAPI.csproj" Id="f585ef34-b4a5-4ab5-9c7e-c64d03b0536b" />
   </Folder>
