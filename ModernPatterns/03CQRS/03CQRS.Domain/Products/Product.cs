@@ -1,4 +1,4 @@
-﻿namespace _03CQRS.WebAPI.Models;
+﻿namespace _03CQRS.Domain.Products;
 
 public sealed class Product
 {

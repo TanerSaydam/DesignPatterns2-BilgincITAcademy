@@ -1,16 +1,16 @@
 ﻿
-using _03CQRS.WebAPI.Context;
-using _03CQRS.WebAPI.Queues;
+using _03CQRS.Application.Queues;
+using _03CQRS.Infrastructure.Context;
 
 namespace _03CQRS.WebAPI.HostedServices;
 
 public sealed class DbBackgroundServices(
-    DbQueue dbQueu,
+    IDbQueue dbQueu,
     IServiceScopeFactory serviceScopeFactory) : BackgroundService
 {
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        await foreach (var job in dbQueu._channel.Reader.ReadAllAsync(stoppingToken))
+        await foreach (var job in dbQueu.GetChannel().Reader.ReadAllAsync(stoppingToken))
         {
             using var scoped = serviceScopeFactory.CreateScope();
             var srv = scoped.ServiceProvider;

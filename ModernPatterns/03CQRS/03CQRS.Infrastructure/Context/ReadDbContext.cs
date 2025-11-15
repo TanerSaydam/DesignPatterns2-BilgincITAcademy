@@ -1,7 +1,7 @@
-﻿using _03CQRS.WebAPI.Models;
+﻿using _03CQRS.Domain.Products;
 using Microsoft.EntityFrameworkCore;
 
-namespace _03CQRS.WebAPI.Context;
+namespace _03CQRS.Infrastructure.Context;
 
 public sealed class ReadDbContext : DbContext
 {

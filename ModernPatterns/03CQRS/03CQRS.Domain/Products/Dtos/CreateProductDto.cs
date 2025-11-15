@@ -1,4 +1,4 @@
-﻿namespace _03CQRS.WebAPI.Dtos;
+﻿namespace _03CQRS.Domain.Products.Dtos;
 
 public sealed record CreateProductDto(
     string Name,
