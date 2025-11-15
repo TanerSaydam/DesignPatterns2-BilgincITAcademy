@@ -25,6 +25,7 @@
   <Folder Name="/ModernPatterns/">
     <Project Path="ModernPatterns/01Middleware/01Middleware.csproj" Id="13740981-a6d9-46cd-af98-929ff42b6919" />
     <Project Path="ModernPatterns/02Channel/02Channel.csproj" Id="5fead262-84cf-41fc-9434-0437e484bd24" />
+    <Project Path="ModernPatterns/04OptionsPattern/04OptionsPattern.csproj" Id="db428218-3f86-4b5d-9828-e0f6f88f21a5" />
   </Folder>
   <Folder Name="/ModernPatterns/03CQRS/">
     <Project Path="ModernPatterns/03CQRS/03CQRS.Application/03CQRS.Application.csproj" Id="4c72b311-4a8d-4f3e-a6ad-8ac485f39134" />
