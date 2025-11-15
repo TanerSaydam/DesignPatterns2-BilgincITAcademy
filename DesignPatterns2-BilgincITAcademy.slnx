@@ -26,6 +26,9 @@
     <Project Path="ModernPatterns/01Middleware/01Middleware.csproj" Id="13740981-a6d9-46cd-af98-929ff42b6919" />
     <Project Path="ModernPatterns/02Channel/02Channel.csproj" Id="5fead262-84cf-41fc-9434-0437e484bd24" />
   </Folder>
+  <Folder Name="/ModernPatterns/03CQRS/">
+    <Project Path="ModernPatterns/03CQRS/03CQRS.WebAPI/03CQRS.WebAPI.csproj" Id="f25a67da-ad22-4d1f-a764-9552a1c5a77d" />
+  </Folder>
   <Folder Name="/NET10Features/">
     <Project Path="NET10Features/NET10Features.WebAPI/NET10Features.WebAPI.csproj" Id="f585ef34-b4a5-4ab5-9c7e-c64d03b0536b" />
   </Folder>
