@@ -1,15 +1,19 @@
 ﻿using _03CQRS.Application.Queues;
 using _03CQRS.Domain.Products;
-using _03CQRS.Domain.Products.Dtos;
 using Mapster;
+using MediatR;
 
 namespace _03CQRS.Application.Products;
 
-public sealed class ProductCreate(
+public sealed record ProductCreateCommand(
+    string Name,
+    decimal Price) : IRequest;
+
+internal sealed class ProductCreateCommandHandler(
     IProductRepository productRepository,
-    IDbQueue dbQueue)
+    IDbQueue dbQueue) : IRequestHandler<ProductCreateCommand>
 {
-    public async Task Handle(CreateProductDto request, CancellationToken cancellationToken = default)
+    public async Task Handle(ProductCreateCommand request, CancellationToken cancellationToken)
     {
         //iş kuralları        
         var product = request.Adapt<Product>();

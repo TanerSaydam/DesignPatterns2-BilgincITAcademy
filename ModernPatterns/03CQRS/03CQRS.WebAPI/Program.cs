@@ -1,12 +1,12 @@
 using _03CQRS.Application.Products;
 using _03CQRS.Application.Queues;
-using _03CQRS.Domain.Products;
 using _03CQRS.Infrastructure.Context;
 using _03CQRS.Infrastructure.Queues;
 using _03CQRS.Infrastructure.Repositories;
 using _03CQRS.WebAPI.HostedServices;
 using Carter;
 using Microsoft.EntityFrameworkCore;
+using Scrutor;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,9 +15,21 @@ builder.Services.AddDbContext<ReadDbContext>(opt => opt.UseInMemoryDatabase("MyD
 
 builder.Services.AddHostedService<DbBackgroundServices>();
 builder.Services.AddSingleton<IDbQueue, DbQueue>();
-builder.Services.AddTransient<ProductCreate>();
-builder.Services.AddTransient<ProductGetAll>();
-builder.Services.AddTransient<IProductRepository, ProductRepository>();
+
+//builder.Services.AddTransient<IProductRepository, ProductRepository>();
+
+builder.Services.Scan(x => x
+ .FromAssemblies(typeof(ProductRepository).Assembly)
+ .AddClasses(publicOnly: true)
+ .UsingRegistrationStrategy(RegistrationStrategy.Skip)
+ .AsMatchingInterface()
+ .WithTransientLifetime()
+ );
+
+builder.Services.AddMediatR(cfr =>
+{
+    cfr.RegisterServicesFromAssembly(typeof(ProductCreateCommand).Assembly);
+});
 
 builder.Services.AddCarter();
 builder.Services.AddCors();
